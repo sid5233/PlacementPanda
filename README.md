@@ -11,14 +11,14 @@ We are trying to build a website for student which will help them to prepare for
 	 HTML 5
 	 CSS
 ## Guide 
-Mrs.Madhuri Nimbalkar Ma'am.
+Mrs.Madhuri Nimbalkar Ma'am
 
 ## Project Supervisor
 Mrs.Elizabeth George Ma'am
 ## Contributor
-Sudhanshu Labhshetwar
+Sudhanshu Labhasetwar
 
-Sushant Buttepawad
+Sushant   Buttepawad
 
 Sudarshan Bhamare
 
