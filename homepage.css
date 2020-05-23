@@ -1,0 +1,13 @@
+.title {
+    background-color: royalblue;
+}
+
+.slogan {
+    background-color: sandybrown;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
