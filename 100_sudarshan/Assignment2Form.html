@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <title>Assignment 2 -Form </title>
 
-<head> Assignment 2 -Form</head>
+<head style="text-align: center;"> Assignment 2 -Form</head><br>
 
 <body>
     <form>
-        <div>
-            <label>First Name : </label><br>
+        <fieldset style="border:4px solid black; padding: 5px; margin-right: 50ex;">
+            <legend> Personal Information </legend>
+
+            <label> First Name : </label><br>
             <input type=" text>"><br>
             <label>Last Name : </label><br>
             <input type="text>"><br>
@@ -22,18 +25,40 @@
             <select> 
             <option value="Nationality"> Indian </option>
             <option value="Nationality"> Candian </option>
-            <option value="Nationality"> American </option><br>
+            <option value="Nationality"> American </option>
         </select>
 
             <address>
             
-            <h5>Address : </h5>       
-                <textarea name="Address" id="address" cols="30" rows="10">  </textarea>
-       </address>
-        </div>
+                  <label for= "address "style="position:top;"> Address </label> 
+                <textarea name="Address" id="address" cols="30" rows="10"> </textarea>
+            </address>
+        </fieldset>
+
+        <fieldset style="border:4px solid black; padding: 5px; margin-right: 50ex;">
+            <legend> Medical History </legend>
+
+            <input type="checkbox" name="Medical" id="smallpops">
+            <label>smallpops</label>
+            <input type="checkbox" name="Medical" id="Mumps">
+            <label>Mumps</label>
+            <input type="checkbox" name="Medical" id="Dizziness">
+            <label>Dizziness</label>
+            <input type="checkbox" name="Medical" id="sneezing">
+            <label>Sneezing</label>
+        </fieldset>
+
+        <fieldset style="border:4px solid black; padding: 5px; margin-right: 50ex;">
+            <legend>Current Medication </legend>
+
+            <label>Are you currenty taking any medication </label>
+            <input type='radio' name="med" id="1">Yes
+            <input type='radio' name="med" id="0">No <br>
+
+            <label style="padding-bottom: 5px;">If you are currenty taking any medication,Please Mention Below : </label>
+            <textarea name="Address" id="address" cols="60" rows="10">  </textarea>
+        </fieldset>
     </form>
-
-
 
 </body>
 
