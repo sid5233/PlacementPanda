@@ -1,260 +1,276 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
-
-
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: url(ds.jpg);
-  font-family:Helvetica;
-  color:white;
-}
-
-
-
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-
-.fakeimg {
-  
-  width: 100%;
-  padding: 0px;
-}
-
-
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: gray;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 6px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: url(ds.jpg);
+            font-family: Helvetica;
+            color: white;
+        }
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        
+        .fakeimg {
+            width: 100%;
+            padding: 0px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="header">
-  <h2>“The Standard Library Saves Programmers From Having To Reinvent The Wheel.”</h2>
-</div>
-
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h1>Data Structure</h1>
-      
-      <div class="fakeimg" style="height:200px;"><img src=ds.jpg height=200 width=900 ></div>
-      <h3>Data Structure Interview Questions with Answers:</h3>
-      <p>
-1. What is data structure?
-</p>
-
-<p>1) 
-Data structure refers to the way data is organized and manipulated. It seeks to find ways to make data access more efficient. When dealing with the data structure, we not only focus on one piece of data but the different set of data and how they can relate to one another in an organized manner..</p>
-
-<p>2. Differentiate between file and structure storage structure.</p>
-
-<p>
-
-The key difference between both the data structure is the memory area that is being accessed. When dealing with the structure that resides the main memory of the computer system, this is referred to as storage structure. When dealing with an auxiliary structure, we refer to it as file structures.</p>
-
-<p>3. When is a binary search best applied?</p>
-
-<p> 
-
-A binary search is an algorithm that is best applied to search a list when the elements are already in order or sorted. The list is searched starting in the middle, such that if that middle value is not the target search key, it will check to see if it will continue the search on the lower half of the list or the higher half. The split and search will then continue in the same manner</p>
-
-<p>4. What is a linked list?
-</p>
-
-<p>
-A linked list is a sequence of nodes in which each node is connected to the node following it. This forms a chain-like link for data storage.</p>
-
-<p>5. How do you reference all the elements in a one-dimension array?</p>
-
-<p>
-
-To reference all the elements in a  one -dimension array, you need to use an indexed loop, So that, the counter runs from 0 to the array size minus one. In this manner, You can reference all the elements in sequence by using the loop counter as the array subscript.<p>
-
-<p>6. In what areas do data structures are applied?</p>
-
-<p>
-
-Data structures are essential in almost every aspect where data is involved. In general, algorithms that involve efficient data structure is applied in the following areas: numerical analysis, operating system, A.I., compiler design, database management, graphics, and statistical analysis, to name a few.
-
-</p>
-<p>7. What is LIFO?</p>
-
-<p>
-
-LIFO is a short form of Last In First Out. It refers how data is accessed, stored and retrieved. Using this scheme, data that was stored last should be the one to be extracted first. This also means that in order to gain access to the first data, all the other data that was stored before this first data must first be retrieved and extracted.</p>
-<p>8. What is a queue?
-</p>
-
-
-<p>
-A queue is a data structure that can simulate a list or stream of data. In this structure, new elements are inserted at one end, and existing elements are removed from the other end.</p>
-<p>9.  What are binary trees?</p>
-
-<p>
-
-A binary tree is one type of data structure that has two nodes, a left node, and a right node. In programming, binary trees are an extension of the linked list structures.</p>
-
-<p>10. Which data structures are applied when dealing with a recursive function?</p>
-
-<p> 
-
-Recursion, is a function that calls itself based on a terminating condition, makes use of the stack. Using LIFO, a call to a recursive function saves the return address so that it knows how to return to the calling function after the call terminates.</p>
-
-<p>11.  What is a stack?</p>
-
-<p>
-
-A stack is a data structure in which only the top element can be accessed. As data is stored in the stack, each data is pushed downward, leaving the most recently added data on top.</p>
-<p>12. Explain Binary Search Tree
-</p>
-
-<p> 
-A binary search tree stores data in such a way that they can be retrieved very efficiently. The left subtree contains nodes whose keys are less than the node’s key value, while the right subtree contains nodes whose keys are greater than or equal to the node’s key value. Moreover, both subtrees are also binary search trees.</p>
-
-<p>13. What are multidimensional arrays?
-</p>
-
-<p> 
-Multidimensional arrays make use of multiple indexes to store data. It is useful when storing data that cannot be represented using single dimensional indexing, such as data representation in a board game, tables with data stored in more than one column.</p>
-
-<p>14. Are linked lists considered linear or non-linear data structures?
-</p>
-
-<p>
-It depends on where you intend to apply linked lists. If you based it on storage, a linked list is considered non-linear. On the other hand, if you based it on access strategies, then a linked list is considered linear.</p>
-
-<p>15. How does dynamic memory allocation help in managing data?</p>
-
-<p>
-
-Apart from being able to store simple structured data types, dynamic memory allocation can combine separately allocated structured blocks to form composite structures that expand and contract as needed.</p>
-
-      <h3>Download PDF:<br><a href="https://career.guru99.com/top-50-data-structure-interview-questions/?format=pdf">Interview Question Answers on Data Structure</a></h3>
-    <h3>If you have any advice / feedback then just drop it in the below given comment section. Your feedback and advice is always welcome.</h3></div>
-    
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      
-     <div class="fakeimg"><a href="https://a.sportradarserving.com/click/k8gt4uhaVcBCGZ8QVD0dkEIOW6ayjNU9xqObbdqaZcXB0PYYygUodHWFaAYm5etHH9hbdckR3OxusxqwCbWZaqZr2fld-pbufxRLjr0zmiz28WeUn1WTiPpsYhJ1roH3pxnvV8l6pPsQzOH0vZ43LMEcsKTGRxb1vE7H5bu23D0irAU_AIQrUPOJaUGnB672ZuTxweECozhVS8L6EnLrdOSqcmzbKV2_b8u6ANnw--c3dftuyrkHDHaZB0SpSvFtfh_WvjlDk0kGvdzt8ZAv9A6iUGzBtYVhOtYsa8MwZQgJ_PEDlRMhyC-jmPu-IMaOS35QL9Ihgtv-ZJAl25hfGMqn0iEp3Zu2jLAHQ953hCLjqT4sf9GOduCBVvHqu_YgL7DJCx74OJBFc6ecDSuJ4E2pt2mUYdujkp12-DjFWOHEUC1mGEF8pevH0UjEINeKdU8eLG1rPAAWwilXzW36lpyJ0dE5aBNXPgs2QRyE4NUvkAaNhN-qqIcQfQDoJ89fCAI5eo7VjuS_TIiMDnDTLR2vWYooLk4gfNKLeq99hoMVBAIrAGNLL1bTznnHtdYvC1ZzcOPrMUW1M0ZzdhhdzjHOQ_3M6cmniVgED4ZTSmIvLRTQ9E_0iRyWeN3bi3NV5hA6q09HaUQeCZKP-9vEpfX3EMHUzgJigZ7-bdoTD_-mLVz59hxXD-jRLD0Hn5QDlc6ZDv8lhzbMe2u14PH2tx0XLpZ3GyIEqAQ7PwrK5XLEaYgn3EPWB1pJ7N3n2V6HXA5xZ7BQtzWv8Txo9ypJ9dNCmRM_siKA8gLPWZw2muXfKMdNG4I_6LoAZ1O_6878HjkdtEm3PXUkFo6ZWICh4nZdCT5H3dy2qgVkCIrrOODzIgWU00tXTumU9wkvsFflG54DYkqGYUNnWVmEiH-DE9f7jTc3pBaZHmcBjNoG-i8JOLl6_ZmlhsKIZgu6mO8yVTnOjC0WQR_xfWLnDllKFqnaMA8-hobq4gEePk_idwOln3FnIs0AcaEbnPQMPLOwz8LeodyUgaKcRHrSJjUtnbhLB-6d5zRtLSMAjZH7eSdjJcJPKKmgjIn-54HOrDob0e55I4_kQukJjdVFl7xBTrlirFZ1KPRh-7c5Q6UhYs3PvUbdPzaGxCnw5ZZ5ceh9oAk//?click3rd=&lp_d2a97axd=https://wlskyinfopartners.adsrv.eacdn.com/C.ashx?btag=a_73b_32c_&affid=4&siteid=73&adid=32&c=">
-<img src="add.jpg" height="500px" width="250px"></a></div><br>
-      
+    <div class="header">
+        <h2>ï¿½The Standard Library Saves Programmers From Having To Reinvent The Wheel.ï¿½</h2>
     </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><a href="https://career.guru99.com/mechanical-engineering-interview-questions/">
-<img src="mech2.jpg" height="50px" width="250px"></a></div><br>
-      <div class="fakeimg"><a href="https://career.guru99.com/top-20-electrical-interview-questions/">
-<img src="electrical2.jpg" height="50px" width="250px"></a></div><br>
-      <div class="fakeimg"><a href="http://placement.freshersworld.com/civil-interview-questions/33121853372">
-<img src="civil.jpg" height="50px" width="250px"></a></div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h1>Data Structure</h1>
+
+                <div class="fakeimg" style="height:200px;"><img src=ds.jpg height=200 width=900></div>
+                <h3>Data Structure Interview Questions with Answers:</h3>
+                <p>
+                    1. What is data structure?
+                </p>
+
+                <p>1) Data structure refers to the way data is organized and manipulated. It seeks to find ways to make data access more efficient. When dealing with the data structure, we not only focus on one piece of data but the different set of data
+                    and how they can relate to one another in an organized manner..</p>
+
+                <p>2. Differentiate between file and structure storage structure.</p>
+
+                <p>
+
+                    The key difference between both the data structure is the memory area that is being accessed. When dealing with the structure that resides the main memory of the computer system, this is referred to as storage structure. When dealing with an auxiliary
+                    structure, we refer to it as file structures.</p>
+
+                <p>3. When is a binary search best applied?</p>
+
+                <p>
+
+                    A binary search is an algorithm that is best applied to search a list when the elements are already in order or sorted. The list is searched starting in the middle, such that if that middle value is not the target search key, it will check to see if it
+                    will continue the search on the lower half of the list or the higher half. The split and search will then continue in the same manner</p>
+
+                <p>4. What is a linked list?
+                </p>
+
+                <p>
+                    A linked list is a sequence of nodes in which each node is connected to the node following it. This forms a chain-like link for data storage.</p>
+
+                <p>5. How do you reference all the elements in a one-dimension array?</p>
+
+                <p>
+
+                    To reference all the elements in a one -dimension array, you need to use an indexed loop, So that, the counter runs from 0 to the array size minus one. In this manner, You can reference all the elements in sequence by using the loop counter as the array
+                    subscript.
+                    <p>
+
+                        <p>6. In what areas do data structures are applied?</p>
+
+                        <p>
+
+                            Data structures are essential in almost every aspect where data is involved. In general, algorithms that involve efficient data structure is applied in the following areas: numerical analysis, operating system, A.I., compiler design, database management,
+                            graphics, and statistical analysis, to name a few.
+
+                        </p>
+                        <p>7. What is LIFO?</p>
+
+                        <p>
+
+                            LIFO is a short form of Last In First Out. It refers how data is accessed, stored and retrieved. Using this scheme, data that was stored last should be the one to be extracted first. This also means that in order to gain access to the first data, all
+                            the other data that was stored before this first data must first be retrieved and extracted.</p>
+                        <p>8. What is a queue?
+                        </p>
+
+
+                        <p>
+                            A queue is a data structure that can simulate a list or stream of data. In this structure, new elements are inserted at one end, and existing elements are removed from the other end.</p>
+                        <p>9. What are binary trees?</p>
+
+                        <p>
+
+                            A binary tree is one type of data structure that has two nodes, a left node, and a right node. In programming, binary trees are an extension of the linked list structures.</p>
+
+                        <p>10. Which data structures are applied when dealing with a recursive function?</p>
+
+                        <p>
+
+                            Recursion, is a function that calls itself based on a terminating condition, makes use of the stack. Using LIFO, a call to a recursive function saves the return address so that it knows how to return to the calling function after the call terminates.</p>
+
+                        <p>11. What is a stack?</p>
+
+                        <p>
+
+                            A stack is a data structure in which only the top element can be accessed. As data is stored in the stack, each data is pushed downward, leaving the most recently added data on top.</p>
+                        <p>12. Explain Binary Search Tree
+                        </p>
+
+                        <p>
+                            A binary search tree stores data in such a way that they can be retrieved very efficiently. The left subtree contains nodes whose keys are less than the nodeï¿½s key value, while the right subtree contains nodes whose keys are greater than or equal to the
+                            nodeï¿½s key value. Moreover, both subtrees are also binary search trees.</p>
+
+                        <p>13. What are multidimensional arrays?
+                        </p>
+
+                        <p>
+                            Multidimensional arrays make use of multiple indexes to store data. It is useful when storing data that cannot be represented using single dimensional indexing, such as data representation in a board game, tables with data stored in more than one column.</p>
+
+                        <p>14. Are linked lists considered linear or non-linear data structures?
+                        </p>
+
+                        <p>
+                            It depends on where you intend to apply linked lists. If you based it on storage, a linked list is considered non-linear. On the other hand, if you based it on access strategies, then a linked list is considered linear.</p>
+
+                        <p>15. How does dynamic memory allocation help in managing data?</p>
+
+                        <p>
+
+                            Apart from being able to store simple structured data types, dynamic memory allocation can combine separately allocated structured blocks to form composite structures that expand and contract as needed.</p>
+
+                        <h3>Download PDF:<br><a href="https://career.guru99.com/top-50-data-structure-interview-questions/?format=pdf">Interview Question Answers on Data Structure</a></h3>
+                        <h3>If you have any advice / feedback then just drop it in the below given comment section. Your feedback and advice is always welcome.</h3>
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+
+                <div class="fakeimg">
+                    <a href="https://a.sportradarserving.com/click/k8gt4uhaVcBCGZ8QVD0dkEIOW6ayjNU9xqObbdqaZcXB0PYYygUodHWFaAYm5etHH9hbdckR3OxusxqwCbWZaqZr2fld-pbufxRLjr0zmiz28WeUn1WTiPpsYhJ1roH3pxnvV8l6pPsQzOH0vZ43LMEcsKTGRxb1vE7H5bu23D0irAU_AIQrUPOJaUGnB672ZuTxweECozhVS8L6EnLrdOSqcmzbKV2_b8u6ANnw--c3dftuyrkHDHaZB0SpSvFtfh_WvjlDk0kGvdzt8ZAv9A6iUGzBtYVhOtYsa8MwZQgJ_PEDlRMhyC-jmPu-IMaOS35QL9Ihgtv-ZJAl25hfGMqn0iEp3Zu2jLAHQ953hCLjqT4sf9GOduCBVvHqu_YgL7DJCx74OJBFc6ecDSuJ4E2pt2mUYdujkp12-DjFWOHEUC1mGEF8pevH0UjEINeKdU8eLG1rPAAWwilXzW36lpyJ0dE5aBNXPgs2QRyE4NUvkAaNhN-qqIcQfQDoJ89fCAI5eo7VjuS_TIiMDnDTLR2vWYooLk4gfNKLeq99hoMVBAIrAGNLL1bTznnHtdYvC1ZzcOPrMUW1M0ZzdhhdzjHOQ_3M6cmniVgED4ZTSmIvLRTQ9E_0iRyWeN3bi3NV5hA6q09HaUQeCZKP-9vEpfX3EMHUzgJigZ7-bdoTD_-mLVz59hxXD-jRLD0Hn5QDlc6ZDv8lhzbMe2u14PH2tx0XLpZ3GyIEqAQ7PwrK5XLEaYgn3EPWB1pJ7N3n2V6HXA5xZ7BQtzWv8Txo9ypJ9dNCmRM_siKA8gLPWZw2muXfKMdNG4I_6LoAZ1O_6878HjkdtEm3PXUkFo6ZWICh4nZdCT5H3dy2qgVkCIrrOODzIgWU00tXTumU9wkvsFflG54DYkqGYUNnWVmEiH-DE9f7jTc3pBaZHmcBjNoG-i8JOLl6_ZmlhsKIZgu6mO8yVTnOjC0WQR_xfWLnDllKFqnaMA8-hobq4gEePk_idwOln3FnIs0AcaEbnPQMPLOwz8LeodyUgaKcRHrSJjUtnbhLB-6d5zRtLSMAjZH7eSdjJcJPKKmgjIn-54HOrDob0e55I4_kQukJjdVFl7xBTrlirFZ1KPRh-7c5Q6UhYs3PvUbdPzaGxCnw5ZZ5ceh9oAk//?click3rd=&lp_d2a97axd=https://wlskyinfopartners.adsrv.eacdn.com/C.ashx?btag=a_73b_32c_&affid=4&siteid=73&adid=32&c=">
+                        <img src="add.jpg" height="500px" width="250px"></a>
+                </div><br>
+
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">
+                    <a href="https://career.guru99.com/mechanical-engineering-interview-questions/">
+                        <img src="mech2.jpg" height="50px" width="250px"></a>
+                </div><br>
+                <div class="fakeimg">
+                    <a href="https://career.guru99.com/top-20-electrical-interview-questions/">
+                        <img src="electrical2.jpg" height="50px" width="250px"></a>
+                </div><br>
+                <div class="fakeimg">
+                    <a href="http://placement.freshersworld.com/civil-interview-questions/33121853372">
+                        <img src="civil.jpg" height="50px" width="250px"></a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Related Links</h3>
+                <p><a href="https://blog.oureducation.in/c-aptitude-questions-answers/">C++ Aptitude Questions with Answers</a></p>
+                <p><a href="https://blog.oureducation.in/interview-questions-with-answers-for-c-language/">C Interview Questions</a></p>
+                <p><a href="https://www.indiabix.com/aptitude/questions-and-answers/">General Aptitude Questions</a></p>
+            </div>
+            <div class="card">
+                <div class="fakeimg">
+                    <a href="https://googleads.g.doubleclick.net/aclk?sa=l&ai=C_j4gU0_RXozBAsKSwgO385vYD7Osm6JcoLGOkYsLkeSkmMoMEAEgpLedFGDl6uaDvA6gAf_bisgDyAEC4AIAqAMByAMIqgSFAk_Qz-J2rn4yB4X0dNZK_nbWdPzv9hDFUwv8fQB11xBqmJ9d84jH0pbPVo6FOiWbdtkAWobhsJahHM1h9Y-UE_JyVxYf2WkXehwld8B-InJqGNJKLze7Qn0MvmEJEg40mWE_yfVtZdcsWDUeBQqROJROzIuRPk2RDRsj_Vcm4kxLKLiEiN8lY8-e8NVOvfxiKO-PvzMIBFeTaYZxLRzKPJK4yQgIcUZ3BM_lpABhAaZft00hULSW6ojzXlnlnMULcvjAEualU6l9jfFLaE5RNzoaHZKef25G0TkyaxavsgwqH3hU7BlHsJyl7myi422mqzLTJaV71THmAcIpKFtTWotJp6y1V8AE-LiJvbgC4AQBoAYCgAeG85wJqAeOzhuoB9XJG6gHk9gbqAe6BqgH8NkbqAfy2RuoB6a-G6gH7NUbqAfz0RuoB-zVG6gHltgbqAfC2hvYBwHSCAcIgGEQARgdsQmjQcmghmYitYAKA5gLAcgLAdgTDJgWAQ&ae=1&num=1&sig=AOD64_3pkCdMn1LpVQfIos-_beEcO-Lw4A&client=ca-pub-3345963573740285&nx=CLICK_X&ny=CLICK_Y&nb=2&adurl=https://www.grammarly.com/%3Futm_source%3Dgdn%26utm_medium%3Dcpc%26utm_campaign%3DF2%26utm_phase%3Dprofessional%26utm_content%3Dbmd121%26gclid%3DEAIaIQobChMIzLaThdXZ6QIVQolwCh23-Qb7EAEYASAAEgLRgvD_BwE">
+                        <img src="grammer.jpg" height="500px" width="250px"></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <h3>Related Links</h3>
-      <p><a href="https://blog.oureducation.in/c-aptitude-questions-answers/">C++ Aptitude Questions with Answers</a></p>
-       <p><a href="https://blog.oureducation.in/interview-questions-with-answers-for-c-language/">C Interview Questions</a></p>
-       <p><a href="https://www.indiabix.com/aptitude/questions-and-answers/">General Aptitude Questions</a></p>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="footer ">
+        <a href="# "></a>Copyright Â© 2020 PlacementPanda. All Rights Reserved .</a>
     </div>
- <div class="card">
- <div class="fakeimg"><a href="https://googleads.g.doubleclick.net/aclk?sa=l&ai=C_j4gU0_RXozBAsKSwgO385vYD7Osm6JcoLGOkYsLkeSkmMoMEAEgpLedFGDl6uaDvA6gAf_bisgDyAEC4AIAqAMByAMIqgSFAk_Qz-J2rn4yB4X0dNZK_nbWdPzv9hDFUwv8fQB11xBqmJ9d84jH0pbPVo6FOiWbdtkAWobhsJahHM1h9Y-UE_JyVxYf2WkXehwld8B-InJqGNJKLze7Qn0MvmEJEg40mWE_yfVtZdcsWDUeBQqROJROzIuRPk2RDRsj_Vcm4kxLKLiEiN8lY8-e8NVOvfxiKO-PvzMIBFeTaYZxLRzKPJK4yQgIcUZ3BM_lpABhAaZft00hULSW6ojzXlnlnMULcvjAEualU6l9jfFLaE5RNzoaHZKef25G0TkyaxavsgwqH3hU7BlHsJyl7myi422mqzLTJaV71THmAcIpKFtTWotJp6y1V8AE-LiJvbgC4AQBoAYCgAeG85wJqAeOzhuoB9XJG6gHk9gbqAe6BqgH8NkbqAfy2RuoB6a-G6gH7NUbqAfz0RuoB-zVG6gHltgbqAfC2hvYBwHSCAcIgGEQARgdsQmjQcmghmYitYAKA5gLAcgLAdgTDJgWAQ&ae=1&num=1&sig=AOD64_3pkCdMn1LpVQfIos-_beEcO-Lw4A&client=ca-pub-3345963573740285&nx=CLICK_X&ny=CLICK_Y&nb=2&adurl=https://www.grammarly.com/%3Futm_source%3Dgdn%26utm_medium%3Dcpc%26utm_campaign%3DF2%26utm_phase%3Dprofessional%26utm_content%3Dbmd121%26gclid%3DEAIaIQobChMIzLaThdXZ6QIVQolwCh23-Qb7EAEYASAAEgLRgvD_BwE">
-<img src="grammer.jpg" height="500px" width="250px"></a></div>
-</div>
-  </div>
-</div>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-<div class="footer">
-  <h2>Footer</h2>
-</div>
 
 </body>
+
 </html>
