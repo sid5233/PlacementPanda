@@ -309,8 +309,8 @@ h1.title {
 .text {
     background-color: #c1ff33;
     color: teal;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 25px;
+    padding: 10px 20px;
 }
 
 .logo:hover {

@@ -1,98 +1,187 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
-         .centered {
-          position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-.container {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-  position: relative;
-  text-align: center;
-  color: rgb(247, 241, 192);
-  text-rendering: optimizeLegibility;
-}
+        .foo {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+        
+        @import url(https://fonts.googleapis.com/css?family=Lato:900);
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            ;
+        }
+        
+        div.foo {
+            width: 90%;
+            margin: 0 auto;
+            text-align: bottom left;
+        }
+        
+        .letter {
+            display: inline-block;
+            font-weight: 900;
+            font-size: 2em;
+            margin: 0.2em;
+            position: relative;
+            color: rgba(2, 2, 2, 0.781);
+            transform-style: preserve-3d;
+            perspective: 400;
+            z-index: 1;
+        }
+        
+        .letter:before,
+        .letter:after {
+            position: absolute;
+            content: attr(data-letter);
+            transform-origin: bottom left;
+            top: 0;
+            left: 0;
+        }
+        
+        .letter,
+        .letter:before,
+        .letter:after {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .letter:before {
+            color: #fff;
+            text-shadow: -1px 0px 1px rgba(255, 255, 255, .8), 1px 0px 1px rgba(0, 0, 0, .8);
+            z-index: 3;
+            transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+        }
+        
+        .letter:after {
+            color: rgba(0, 0, 0, .11);
+            z-index: 2;
+            transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+        }
+        
+        .letter:hover:before {
+            color: #fafafa;
+            transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+        }
+        
+        .letter:hover:after {
+            transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+        }
+        
+        .container {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            position: relative;
+            text-align: center;
+            color: rgb(247, 241, 192);
+            text-rendering: optimizeLegibility;
+        }
         
         nav {
-  float: right;
-  width: 20%;
-  height: auto;
-  background: #ccc;
-  padding: 20px;
-}
-header {
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+            float: right;
+            width: 20%;
+            height: auto;
+            background: #ccc;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
     </style>
     <title>GD Topics With Answers</title>
-    
+
 </head>
+
 <body>
-  
+
     <header class="container">
-        <image src="group.jpg" width="100%" height="350px";>
-          <div class="centered">GD Topics With Answers</div>
-          
-      </header>
-    
+        <image src="group.jpg" width="100%" height="350px" ;>
+            <div class="foo">
+                <span class="letter" data-letter="GD">GD</span>
+                <span class="letter" data-letter="Topics">Topics</span>
+                <span class="letter" data-letter="with">with</span>
+                <span class="letter" data-letter="Answers">Answers</span>
+                <span class="letter" data-></span>
+
+    </header>
+
     <section>
-    <nav>
-        <ul>
-            <li>Topics On General Issues</li><br>
-          <li><a href="#eng">English must remain the official language of India.</a></li><br>
-          <li><a href="#beef">Beef ban is logical.</a></li><br>
-          <li><a href="#love">Love marriage is better than an arranged marriage.</a></li><br>
-          <li><a href="#joint">Joint family is better than a nuclear family.</a></li><br>
-          <li><a href="#what">Whatsapp, Facebook, Instagram, and Snapchat are killing creativity.</a></li><br>
-          <li><a href="#bor">A borderless world is practically impossible. Yes or no?
+        <nav>
+            <ul>
+                <li>Topics On General Issues</li><br>
+                <li><a href="#eng">English must remain the official language of India.</a></li><br>
+                <li><a href="#beef">Beef ban is logical.</a></li><br>
+                <li><a href="#love">Love marriage is better than an arranged marriage.</a></li><br>
+                <li><a href="#joint">Joint family is better than a nuclear family.</a></li><br>
+                <li><a href="#what">Whatsapp, Facebook, Instagram, and Snapchat are killing creativity.</a></li><br>
+                <li><a href="#bor">A borderless world is practically impossible. Yes or no?
         </a></li><br>
-        </ul>
-      </nav>
-      <article>
-          <p style="font-size: large;">In this blog, we have covered General Topics for GD. Prepare for your upcoming group discussion round with these detailed answers.</p>
-        <h1 id="eng">English must remain the official language of India</h1>
-        <p>For: Yes. Over 500M people in the world, spread out across 101 countries speak English today. It is a widespread language in India and also the official language in 35 countries (including India).</p>
-        <p>Against: No. Whether a country has English as its official language or not, speaks very little about how its citizens really communicate with one another. Sadly, just 3% of the world’s population accounts for 96% of all languages spoken today. If this continues, our regional languages and mother tongues will vanish from the face of Earth in no time. Our youngsters have to unnecessarily spend time to master English, instead of which they can brush up their logical, reasoning and other analytical abilities</p>
-        <h1 id="beef">Beef ban  is logical</h1>
-        <p>For: Yes. Hindu sentiments are hurt when cow slaughter is conducted. We drink our mother’s milk, but we do not ‘eat’ her! Similarly, we should not eat beef. It’s as simple as that. Squeeze the supply and the beef will go off plates everywhere. If you still wish to satiate your taste buds, you are free to shift to buffalo meat instead.</p>
-        <p>Against: No. Rather, this argument is illogical. From a nutritionary perspective, beef is an excellent source of protein. And banning it is a clear example of non-discrimination on the grounds of religion, as eating lamb meat, seafood and chicken still remain legal.</p>
-        <h1 id="love">Love marriage is better than an arranged marriage.</h1>
-        <p>For: Yes. In a love marriage, a boy/girl finds a partner of their own choice. They are matured enough to judge people and effectively select a partner, unlike an arranged marriage. Besides, there is a strong bond of love in the couple.</p>
-        <p>Against: No. Divorce rate is too high in love marriages. On the other hand, an arranged marriage is a sweet confluence of two families. Due to the involvement of more people in this union, marital *conflicts get effectively resolved. </p>
-        <p>Neutral: Success rate of any marriage does not depend on whether it was arranged or not. Rather it depends on how these two people complement and understand one another.</p>
-        <h1 id="joint">Joint family is better than a nuclear family.</h1>
-        <p>For: Yes. The responsibility of a nuclear family rests on the couple, which is tiresome. Besides having a strong support system, joint families share a greater bond of unity and affection. Prosperity and adversities are equally shared too.</p>
-        <p>Against: No. Nuclear families are better as young couples have more freedom. They can plan their own budgeting and finances as dependencies are less and savings are more. Besides, there is no scope for property related disputes which are prevalant in joint families.</p>
-        <h1 id="what">Whatsapp, Facebook, Instagram, and Snapchat are killing creativity.</h1>
-        <p>For: Yes. We keep scrolling our social media feed for hours, jumping from one app to another, instead of doing useful things like reading, exercising or for that matter, even socializing. These internet rabbit holes also make us less productive! We consume more than we create which is a pain.</p>
-        <p>Against: No. Social media is not 100% online distraction or procrastination! Rather, it is a great medium to stay informed, voice our opinion. In Jan’10, Haiti had an earthquake and over 100k people died while millions were left scampering for food and shelter. Soon afterwards, the Red Cross started an appeal for aid on social media. Within a few days, millions of dollars were raised for the earthquake victims! That is the undisputed power of social media.</p>
-        <h1 id="bor">A borderless world is practically impossible. Yes or no?</h1>
-        <p>For: Yes. If we seek for a peaceful future, without government intruision. If we seek for complete financial equality, a borderless world is the solution. It is a very practical concept.</p>
-        <p>Against: No. It is more of a myth than a reality. Having a borderless world is completely on us and depends on how we want our future to be like. The needs of nations, freedom of communities and religious groupism will never let this happen.</p>
-      </article>
+            </ul>
+            <div class="fakeimg">
+                <a href="https://a.sportradarserving.com/click/k8gt4uhaVcBCGZ8QVD0dkEIOW6ayjNU9xqObbdqaZcXB0PYYygUodHWFaAYm5etHH9hbdckR3OxusxqwCbWZaqZr2fld-pbufxRLjr0zmiz28WeUn1WTiPpsYhJ1roH3pxnvV8l6pPsQzOH0vZ43LMEcsKTGRxb1vE7H5bu23D0irAU_AIQrUPOJaUGnB672ZuTxweECozhVS8L6EnLrdOSqcmzbKV2_b8u6ANnw--c3dftuyrkHDHaZB0SpSvFtfh_WvjlDk0kGvdzt8ZAv9A6iUGzBtYVhOtYsa8MwZQgJ_PEDlRMhyC-jmPu-IMaOS35QL9Ihgtv-ZJAl25hfGMqn0iEp3Zu2jLAHQ953hCLjqT4sf9GOduCBVvHqu_YgL7DJCx74OJBFc6ecDSuJ4E2pt2mUYdujkp12-DjFWOHEUC1mGEF8pevH0UjEINeKdU8eLG1rPAAWwilXzW36lpyJ0dE5aBNXPgs2QRyE4NUvkAaNhN-qqIcQfQDoJ89fCAI5eo7VjuS_TIiMDnDTLR2vWYooLk4gfNKLeq99hoMVBAIrAGNLL1bTznnHtdYvC1ZzcOPrMUW1M0ZzdhhdzjHOQ_3M6cmniVgED4ZTSmIvLRTQ9E_0iRyWeN3bi3NV5hA6q09HaUQeCZKP-9vEpfX3EMHUzgJigZ7-bdoTD_-mLVz59hxXD-jRLD0Hn5QDlc6ZDv8lhzbMe2u14PH2tx0XLpZ3GyIEqAQ7PwrK5XLEaYgn3EPWB1pJ7N3n2V6HXA5xZ7BQtzWv8Txo9ypJ9dNCmRM_siKA8gLPWZw2muXfKMdNG4I_6LoAZ1O_6878HjkdtEm3PXUkFo6ZWICh4nZdCT5H3dy2qgVkCIrrOODzIgWU00tXTumU9wkvsFflG54DYkqGYUNnWVmEiH-DE9f7jTc3pBaZHmcBjNoG-i8JOLl6_ZmlhsKIZgu6mO8yVTnOjC0WQR_xfWLnDllKFqnaMA8-hobq4gEePk_idwOln3FnIs0AcaEbnPQMPLOwz8LeodyUgaKcRHrSJjUtnbhLB-6d5zRtLSMAjZH7eSdjJcJPKKmgjIn-54HOrDob0e55I4_kQukJjdVFl7xBTrlirFZ1KPRh-7c5Q6UhYs3PvUbdPzaGxCnw5ZZ5ceh9oAk//?click3rd=&lp_d2a97axd=https://wlskyinfopartners.adsrv.eacdn.com/C.ashx?btag=a_73b_32c_&affid=4&siteid=73&adid=32&c=">
+                    <img src="add1.gif" height="500px" width="250px"></a>
+            </div><br>
+        </nav>
+        <article class="art">
+            <p style="font-size: large;">In this blog, we have covered General Topics for GD. Prepare for your upcoming group discussion round with these detailed answers.</p>
+            <h1 id="eng">English must remain the official language of India</h1>
+            <p>For: Yes. Over 500M people in the world, spread out across 101 countries speak English today. It is a widespread language in India and also the official language in 35 countries (including India).</p>
+            <p>Against: No. Whether a country has English as its official language or not, speaks very little about how its citizens really communicate with one another. Sadly, just 3% of the world’s population accounts for 96% of all languages spoken today.
+                If this continues, our regional languages and mother tongues will vanish from the face of Earth in no time. Our youngsters have to unnecessarily spend time to master English, instead of which they can brush up their logical, reasoning
+                and other analytical abilities</p>
+            <h1 id="beef">Beef ban is logical</h1>
+            <p>For: Yes. Hindu sentiments are hurt when cow slaughter is conducted. We drink our mother’s milk, but we do not ‘eat’ her! Similarly, we should not eat beef. It’s as simple as that. Squeeze the supply and the beef will go off plates everywhere.
+                If you still wish to satiate your taste buds, you are free to shift to buffalo meat instead.</p>
+            <p>Against: No. Rather, this argument is illogical. From a nutritionary perspective, beef is an excellent source of protein. And banning it is a clear example of non-discrimination on the grounds of religion, as eating lamb meat, seafood and
+                chicken still remain legal.</p>
+            <h1 id="love">Love marriage is better than an arranged marriage.</h1>
+            <p>For: Yes. In a love marriage, a boy/girl finds a partner of their own choice. They are matured enough to judge people and effectively select a partner, unlike an arranged marriage. Besides, there is a strong bond of love in the couple.</p>
+            <p>Against: No. Divorce rate is too high in love marriages. On the other hand, an arranged marriage is a sweet confluence of two families. Due to the involvement of more people in this union, marital *conflicts get effectively resolved. </p>
+            <p>Neutral: Success rate of any marriage does not depend on whether it was arranged or not. Rather it depends on how these two people complement and understand one another.</p>
+            <h1 id="joint">Joint family is better than a nuclear family.</h1>
+            <p>For: Yes. The responsibility of a nuclear family rests on the couple, which is tiresome. Besides having a strong support system, joint families share a greater bond of unity and affection. Prosperity and adversities are equally shared too.</p>
+            <p>Against: No. Nuclear families are better as young couples have more freedom. They can plan their own budgeting and finances as dependencies are less and savings are more. Besides, there is no scope for property related disputes which are prevalant
+                in joint families.</p>
+            <h1 id="what">Whatsapp, Facebook, Instagram, and Snapchat are killing creativity.</h1>
+            <p>For: Yes. We keep scrolling our social media feed for hours, jumping from one app to another, instead of doing useful things like reading, exercising or for that matter, even socializing. These internet rabbit holes also make us less productive!
+                We consume more than we create which is a pain.</p>
+            <p>Against: No. Social media is not 100% online distraction or procrastination! Rather, it is a great medium to stay informed, voice our opinion. In Jan’10, Haiti had an earthquake and over 100k people died while millions were left scampering
+                for food and shelter. Soon afterwards, the Red Cross started an appeal for aid on social media. Within a few days, millions of dollars were raised for the earthquake victims! That is the undisputed power of social media.</p>
+            <h1 id="bor">A borderless world is practically impossible. Yes or no?</h1>
+            <p>For: Yes. If we seek for a peaceful future, without government intruision. If we seek for complete financial equality, a borderless world is the solution. It is a very practical concept.</p>
+            <p>Against: No. It is more of a myth than a reality. Having a borderless world is completely on us and depends on how we want our future to be like. The needs of nations, freedom of communities and religious groupism will never let this happen.</p>
+        </article>
     </section>
     <footer>
-        
+
         <a href="#top">Back to top</a>
-      </footer>
-      
-      
+    </footer>
+
+
 </body>
+
 </html>
